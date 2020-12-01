@@ -20,7 +20,5 @@ class MainActivity : AppCompatActivity() {
 
         val spinner = findViewById<Spinner>(R.id.spinnerConf)
         spinner.adapter = adapter
-        startActivity(Intent(this, ConfigActivity::class.java))
-        finish()
     }
 }

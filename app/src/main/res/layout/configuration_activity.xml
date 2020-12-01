@@ -27,8 +27,8 @@
         </Spinner>
 
         <ImageButton
-            android:id="@+id/sendButton"
-            android:layout_width="45dp"
+            android:id="@+id/optionButton"
+            android:layout_width="50dp"
             android:layout_height="match_parent"
             android:background="@color/colorPrimaryDark"
             android:src="@drawable/ic_conf_tool"

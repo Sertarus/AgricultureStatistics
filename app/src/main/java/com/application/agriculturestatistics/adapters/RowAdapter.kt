@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.application.agriculturestatistics.R
 import com.application.agriculturestatistics.models.ModelRow
 
-class RowAdapter (private val context: Context, val rowList: MutableList<ModelRow>) : RecyclerView.Adapter<RowAdapter.MyHolder>() {
+class RowAdapter (private val context: Context, val rowList: MutableList<ModelRow>,
+                  val sectorColors: MutableList<String>) :
+    RecyclerView.Adapter<RowAdapter.MyHolder>() {
 
     class MyHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
         var recyclerView: RecyclerView = itemView.findViewById(R.id.rows_recyclerView)
@@ -28,10 +30,14 @@ class RowAdapter (private val context: Context, val rowList: MutableList<ModelRo
     }
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
-        holder.recyclerView.adapter = SectorAdapter (context, rowList[position])
+        holder.recyclerView.adapter = SectorAdapter (context, rowList[position], sectorColors)
         holder.recyclerView.layoutManager = LinearLayoutManager(context,
             LinearLayoutManager.HORIZONTAL, false)
         holder.recyclerView.setHasFixedSize(true)
+    }
+
+    public fun changeColors() {
+
     }
 
 }
