@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Анализ и учёт состояния почвы</string>
+    <string name="config_tool_icon">Config tool icon</string>
+</resources>

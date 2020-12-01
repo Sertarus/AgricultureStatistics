@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Выберите конфигурацию для загрузки"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/addUserLabel"
+        android:layout_above="@+id/spinnerConf"
+        android:padding="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerConf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="20dp">
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузить"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/spinnerConf"
+        android:id="@+id/logButton"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/recover_password"
+        android:text="Создать новую конфигурацию"
+        android:layout_below="@+id/logButton"
+        android:gravity="center_horizontal"
+        android:padding="20dp"/>
+</RelativeLayout>

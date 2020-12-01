@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ConfigActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectors_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/confLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerParam"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+        </Spinner>
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_conf_tool"
+            android:contentDescription="@string/config_tool_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

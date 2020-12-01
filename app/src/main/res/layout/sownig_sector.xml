@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/sectorLayout">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_crop_square"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/sectorName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+</LinearLayout>
